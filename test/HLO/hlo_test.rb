@@ -8,8 +8,9 @@ require_solution 'HLO'
 class ClientTest < Minitest::Test
 
   def test_hlo
-    assert_equal "Hello", Hello.new.hello("Ben"), 'App returns a string'
+    assert_equal "Hello World", Hello.new.hello("World"), 'App returns a string'
   end
 
 end
+
 
