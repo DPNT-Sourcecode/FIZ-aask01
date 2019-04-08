@@ -1,6 +1,8 @@
 # noinspection RubyUnusedLocalVariable
 class FizzBuzz
-
+  def deluxe
+    
+  end
 
   def fizz_buzz(number)
     return "fizz buzz" if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')))
@@ -12,6 +14,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
