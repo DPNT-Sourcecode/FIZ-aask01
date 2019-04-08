@@ -1,9 +1,9 @@
 # noinspection RubyUnusedLocalVariable
 class FizzBuzz
   
-  def fizz_buzz(number)    
-    return "fizz buzz fake deluxe" if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)))
-    # return "fizz buzz deluxe" if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)) % 2 == 0)
+  def fizz_buzz(number) 
+    return "fizz buzz deluxe" if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)))%2==0
+    return "fizz buzz fake deluxe" if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)))%2!=0
 
     return "fizz deluxe" if ((number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1))
     return "buzz deluxe" if ((number % 5 == 0 || number.to_s.include?('5')) && (number > 10 && number.to_s.chars.uniq.length == 1))
@@ -16,5 +16,6 @@ class FizzBuzz
   end
 
 end
+
 
 
