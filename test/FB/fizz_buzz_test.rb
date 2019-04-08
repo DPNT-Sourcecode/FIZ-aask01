@@ -8,9 +8,11 @@ require_solution 'FIZ'
 class ClientTest < Minitest::Test
 
   def test_fiz
-    assert_equal "Hello, John!", Hello.new.hello("John"), 'App returns a string'
-    assert_equal 3, Sum.new.sum(1, 2)
+    assert_equal "fizz", FizzBuzz.new.fizz_buzz(3),   'App returns a string'
+    assert_equal "buzz", FizzBuzz.new.fizz_buzz(5),   'App returns a string'
+
   end
   
 
 end
+
