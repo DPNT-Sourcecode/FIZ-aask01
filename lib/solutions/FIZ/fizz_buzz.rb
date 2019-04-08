@@ -3,11 +3,11 @@ class FizzBuzz
   
   def fizz_buzz(number) 
     
-    if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)))% 2 ==0
+    if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)) && number % 2 == 0)
       return "fizz buzz deluxe"
     end
 
-    if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)))% 2 != 0
+    if ((number % 5 == 0 || number.to_s.include?('5')) && (number % 3 == 0 || number.to_s.include?('3')) && (number > 10 && number.to_s.chars.uniq.length == 1)) && number % 2 != 0))
       return "fizz buzz fake deluxe"
     end
 
@@ -22,8 +22,3 @@ class FizzBuzz
   end
 
 end
-
-
-
-
-
