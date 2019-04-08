@@ -3,12 +3,13 @@ require 'logging'
 
 Logging.logger.root.appenders = Logging.appenders.stdout
 
-require_solution 'HLO2'
+require_solution 'FIZ'
 
 class ClientTest < Minitest::Test
 
-  def test_hlo2
+  def test_fiz
     assert_equal "Hello, John!", Hello.new.hello("John"), 'App returns a string'
   end
+  
 
 end
