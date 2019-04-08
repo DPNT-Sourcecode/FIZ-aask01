@@ -10,10 +10,9 @@ class FizzBuzz
       end
     end
 
-    if ((number % 5 == 0 && number.to_s.include?('5')) || (number % 3 == 0 && number.to_s.include?('3')))
-      if number % 2 != 0
-        return "fizz fake deluxe"
-      else return "fizz deluxe"
+    if (number % 3 == 0 && number.to_s.include?('3'))
+      if number % 2 == 0
+        return "fizz deluxe"
       end
     end
 
@@ -41,6 +40,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
