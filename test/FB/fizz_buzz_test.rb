@@ -11,10 +11,11 @@ class ClientTest < Minitest::Test
     assert_equal 1, FizzBuzz.new.fizz_buzz(1),   'App returns an integer'
     assert_equal "fizz buzz fake deluxe", FizzBuzz.new.fizz_buzz(555),   'App returns a string'
     assert_equal "fizz deluxe", FizzBuzz.new.fizz_buzz(36),   'App returns a string'
-    assert_equal "fake deluxe", FizzBuzz.new.fizz_buzz(3),   'App returns a string'
+    assert_equal "fizz fake deluxe", FizzBuzz.new.fizz_buzz(3),   'App returns a string'
     assert_equal "buzz fake deluxe", FizzBuzz.new.fizz_buzz(55),   'App returns a string'
   end
   
 
 end
+
 
